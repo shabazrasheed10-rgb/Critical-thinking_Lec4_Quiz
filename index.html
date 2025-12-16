@@ -46,7 +46,7 @@
   <div id="quiz-container" class="w-full max-w-2xl bg-white shadow-xl rounded-2xl p-6 md:p-10">
 
    <div class="flex justify-between items-center mb-6 border-b pb-4 border-gray-200">
-    <h1 class="text-2xl font-bold text-[#6D9BCA]">Critical thinking_Quiz_L2</h1>
+    <h1 class="text-2xl font-bold text-[#6D9BCA]">Critical thinking_Quiz_L4</h1>
     
     <div class="text-lg font-semibold text-gray-700">
       Score: <span id="score-display" class="text-green-600">0</span> / <span id="total-questions">0</span>
@@ -80,126 +80,170 @@
   <script>
     const quizData = [
         
-            {
-    question: "1. What is the definition of a logical fallacy in the context of medicine?",
+               {
+    question: "1. What is the primary objective of academic debate in the medical field?",
     options: [
-        "A. An error that enhances argument validity",
-        "B. A misleading error in reasoning",
-        "C. A form of medical bias",
-        "D. A method of persuasive communication",
-        "E. A statistical anomaly in research"
+        "A. To memorize medical facts",
+        "B. To foster critical thinking and communication skills",
+        "C. To promote individual opinions",
+        "D. To discourage teamwork",
+        "E. To simplify complex topics"
     ],
-    answer: "B. A misleading error in reasoning"
+    answer: "B. To foster critical thinking and communication skills"
 },
 {
-    question: "2. In the example of confirmation bias, what is the primary error in reasoning?",
+    question: "2. Which of the following is NOT a key component of an academic debate?",
     options: [
-        "A. Ignoring all evidence",
-        "B. Accepting evidence from unreliable sources",
-        "C. Focusing only on evidence that supports pre-existing beliefs",
-        "D. Overestimating the consequences of a decision",
-        "E. Misrepresenting an opponent's argument"
+        "A. Topic definition",
+        "B. Affirmative team",
+        "C. Rebuttal preparation",
+        "D. Audience participation",
+        "E. Moderator's role"
     ],
-    answer: "C. Focusing only on evidence that supports pre-existing beliefs"
+    answer: "D. Audience participation"
 },
 {
-    question: "3. How does bias affect medical decision-making?",
+    question: "3. In a policy debate, what is typically the central focus?",
     options: [
-        "A. It enhances clinical reasoning",
-        "B. It can lead to systematic errors in judgment",
-        "C. It is always beneficial in practice",
-        "D. It has no impact on patient outcomes",
-        "E. It encourages adherence to guidelines"
+        "A. Ethical implications of medical advancements",
+        "B. Accuracy of scientific statements",
+        "C. Implementation of specific actions or policies",
+        "D. Personal beliefs of the debaters",
+        "E. Historical context of medical practices"
     ],
-    answer: "B. It can lead to systematic errors in judgment"
+    answer: "C. Implementation of specific actions or policies"
 },
 {
-    question: "4. What is the primary concern with \"Anchoring Bias\" in a clinical setting?",
+    question: "4. What is a common mistake made during academic debates?",
     options: [
-        "A. It leads to excessive testing",
-        "B. It prevents considering new information",
-        "C. It enhances patient communication",
-        "D. It encourages alternative treatment options",
-        "E. It simplifies complex diagnoses"
+        "A. Using too few examples",
+        "B. Overloading with information",
+        "C. Maintaining neutrality",
+        "D. Encouraging teamwork",
+        "E. Focusing solely on emotional appeals"
     ],
-    answer: "B. It prevents considering new information"
+    answer: "B. Overloading with information"
 },
 {
-    question: "5. What is an example of \"Availability Bias\" in medical practice?",
+    question: "5. Which statement best describes the role of the moderator in a debate?",
     options: [
-        "A. Dismissing a rare disease due to recent experiences",
-        "B. Overdiagnosing a condition based on recent encounters",
-        "C. Ignoring symptoms that don't fit the initial diagnosis",
-        "D. Trusting unverified sources for medical information",
-        "E. Focusing solely on patient history"
+        "A. To argue on behalf of one side",
+        "B. To ensure structured and fair discussions",
+        "C. To present evidence for both teams",
+        "D. To dominate the conversation",
+        "E. To evaluate the quality of arguments"
     ],
-    answer: "B. Overdiagnosing a condition based on recent encounters"
+    answer: "B. To ensure structured and fair discussions"
 },
 {
-    question: "6. What is a consequence of \"Overconfidence Bias\"?",
+    question: "6. What is the recommended structure for presenting an argument in a debate?",
     options: [
-        "A. Increased collaboration among colleagues",
-        "B. Enhanced diagnostic accuracy",
-        "C. Ignoring valid alternative suggestions",
-        "D. Systematic review of all evidence",
-        "E. Improved patient outcomes"
+        "A. Claim, Evidence, Reasoning",
+        "B. Evidence, Conclusion, Claim",
+        "C. Conclusion, Claim, Evidence",
+        "D. Reasoning, Claim, Evidence",
+        "E. Evidence, Reasoning, Conclusion"
     ],
-    answer: "C. Ignoring valid alternative suggestions"
+    answer: "A. Claim, Evidence, Reasoning"
 },
 {
-    question: "7. Which bias could be illustrated by a doctor who only orders tests that confirm their initial diagnosis?",
+    question: "7. When preparing for a debate, why is it important to anticipate counterarguments?",
     options: [
-        "A. Anchoring Bias",
-        "B. Confirmation Bias",
-        "C. Availability Bias",
-        "D. Overconfidence Bias",
-        "E. Post Hoc Ergo Propter Hoc"
+        "A. To confuse the opposing team",
+        "B. To avoid addressing their points",
+        "C. To prepare effective rebuttals",
+        "D. To demonstrate superiority",
+        "E. To increase debate time"
     ],
-    answer: "B. Confirmation Bias"
+    answer: "C. To prepare effective rebuttals"
 },
 {
-    question: "8. How can logical fallacies in medical research impact patient care?",
+    question: "8. In the context of academic debate, what does \"evidence-based practice\" entail?",
     options: [
-        "A. They improve patient understanding",
-        "B. They lead to incorrect diagnoses and treatments",
-        "C. They ensure adherence to medical guidelines",
-        "D. They promote evidence-based practices",
-        "E. They enhance communication between professionals"
+        "A. Relying on personal opinions and experiences",
+        "B. Supporting arguments with scientific data",
+        "C. Ignoring conflicting evidence",
+        "D. Following traditional practices without question",
+        "E. Using emotional appeals to persuade"
     ],
-    answer: "B. They lead to incorrect diagnoses and treatments"
+    answer: "B. Supporting arguments with scientific data"
 },
 {
-    question: "9. What is the significance of understanding bias in research and clinical practice?",
+    question: "9. What is the ideal duration for an opening statement in a formal debate?",
     options: [
-        "A. It guarantees accurate results",
-        "B. It helps in minimizing errors in judgment",
-        "C. It eliminates the need for peer review",
-        "D. It encourages reliance on popular opinion",
-        "E. It simplifies complex medical issues"
+        "A. 1 minute",
+        "B. 2–3 minutes",
+        "C. 5 minutes",
+        "D. 10 minutes",
+        "E. 15 minutes"
     ],
-    answer: "B. It helps in minimizing errors in judgment"
+    answer: "B. 2–3 minutes"
 },
 {
-    question: "10. Which scenario best exemplifies a \"Strawman Argument\"?",
+    question: "10. Which type of debate focuses on ethical or moral issues?",
     options: [
-        "A. Ignoring contrary evidence in a study",
-        "B. Misrepresenting a doctor's treatment plan to discredit it",
-        "C. Assuming a diagnosis based on initial symptoms",
-        "D. Attacking a colleague's character during a discussion",
-        "E. Predicting severe outcomes from minor changes"
+        "A. Policy Debate",
+        "B. Philosophical Debate",
+        "C. Fact-Based Debate",
+        "D. Team Debate",
+        "E. Informal Debate"
     ],
-    answer: "B. Misrepresenting a doctor's treatment plan to discredit it"
+    answer: "B. Philosophical Debate"
 },
 {
-    question: "11. What strategy can minimize the influence of logical fallacies in clinical judgment?",
+    question: "11. What is a key benefit of participating in academic debates for medical students?",
     options: [
-        "A. Relying solely on expert opinions",
-        "B. Engaging in critical analysis and evidence evaluation",
-        "C. Following established protocols without question",
-        "D. Prioritizing personal experience over research",
-        "E. Dismissing alternative viewpoints"
+        "A. It reduces the need for clinical practice",
+        "B. It enhances confidence in public speaking",
+        "C. It limits exposure to diverse perspectives",
+        "D. It promotes memorization of facts",
+        "E. It discourages critical analysis"
     ],
-    answer: "B. Engaging in critical analysis and evidence evaluation"
+    answer: "B. It enhances confidence in public speaking"
+},
+{
+    question: "12. Which of the following is an ineffective strategy during a debate?",
+    options: [
+        "A. Listening carefully to opposing arguments",
+        "B. Using jargon without explanation",
+        "C. Providing credible evidence",
+        "D. Staying respectful toward opponents",
+        "E. Summarizing key points clearly"
+    ],
+    answer: "B. Using jargon without explanation"
+},
+{
+    question: "13. During the rebuttal phase of a debate, what is essential for success?",
+    options: [
+        "A. Ignoring the opposing arguments",
+        "B. Presenting emotional anecdotes",
+        "C. Using evidence to refute arguments",
+        "D. Speaking for the entire time allowed",
+        "E. Avoiding direct responses"
+    ],
+    answer: "C. Using evidence to refute arguments"
+},
+{
+    question: "14. What type of debate involves participants working in teams?",
+    options: [
+        "A. Policy Debate",
+        "B. Philosophical Debate",
+        "C. Fact-Based Debate",
+        "D. Team Debate",
+        "E. Informal Debate"
+    ],
+    answer: "D. Team Debate"
+},
+{
+    question: "15. Why is it important to use credible sources when gathering evidence for a debate?",
+    options: [
+        "A. To impress the audience",
+        "B. To ensure the validity of arguments",
+        "C. To complicate the discussion",
+        "D. To follow popular opinion",
+        "E. To avoid personal biases"
+    ],
+    answer: "B. To ensure the validity of arguments"
 }
 
     ];
